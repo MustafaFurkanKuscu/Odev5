@@ -1,0 +1,84 @@
+.month {
+    padding: 2em 0.01em;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 5px;
+    margin-left: 0.5em;
+}
+
+.month .next {
+    float: right;
+    padding-top: 5px;
+    margin-right: 0.5em;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 2.85em;
+    color: #df830b;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: white;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 1.85em;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: black;
+    padding: 1em;
+
+}
+
+.days li .active {
+    padding: 5px;
+    color: #06b0c7;
+   
+}
+
+.days li:hover{
+    background-color: #06b0c7;
+    border-radius: 1em;
+}
+.calendar{
+    
+    margin-top: 1em;
+
+}
+#airdatepicker{
+    margin-left: 2em;
+    margin-top: 1em;
+    align-self: center;
+   
+ 
+}

@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.gift-icon{
+    background-color: antiquewhite;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    
+}
+.bell-icon,
+.user-icon{
+    padding:0.5em ;
+
+}
+.img-software-solutions{
+    margin-top: 2em;
+    padding-left: 2em;
+}
+.persons{
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
+.persons i{
+    color: orange;
+}
+
+.content .social-media i{
+    font-size: 1.5em;
+
+}

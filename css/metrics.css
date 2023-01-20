@@ -1,0 +1,54 @@
+.istatistics{
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    flex: 1;
+    gap: 1em;
+    padding: 1em;
+    color: white;
+    height: 13em;
+    align-items: center;
+}
+.metrics{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    
+}
+.key-metrics{
+    flex: 2;
+    background-color: #F1F0F0;
+    align-self: flex-start;
+    justify-content: space-around;
+    height: 15em;
+    border-radius: 1em;
+    
+}
+#angles-up{
+    color: green;
+    margin-top: 5em;
+}
+#angles-down{
+    color: red;
+    margin-top: 3.5em;
+}
+.istatistic-text-color{
+    color: white;
+    padding-left: 0.2em;
+}
+.xl-text-white{
+    font-weight: 400;
+    font-size:2em;
+    color: white;
+}
+.metric-key-values{
+    display: flex;
+    justify-content: space-between;
+    margin-right:1em;
+}
+.key-metric-title{
+    font-weight: 900;
+    padding-bottom: 1em;
+
+}

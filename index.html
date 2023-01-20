@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/socialmedia.css">
+    <link rel="stylesheet" href="css/metrics.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/notifications.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/air-datepicker/air-datepicker.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="deneme">
+                <a href="#" class="sidebar-button2"><i class="fa-solid fa-eye sidebar-logo-home"></i></a>
+                <hr>
+            </div>
+            <a href="#" class="sidebar-button"><i class="fa-solid fa-heart-pulse sidebar-logo"></i></a>
+            <a href="#" class="sidebar-button"><i class="fa-solid fa-satellite-dish sidebar-logo"></i></a>
+            <a href="#" class="sidebar-button"><i class="fa-solid fa-calendar sidebar-logo"></i></a>
+            <a href="#" class="sidebar-button"><i class="fa-solid fa-sliders sidebar-logo"></i></a>
+            <a href="#" class="sidebar-button"><i class="fa-regular fa-comments sidebar-logo"></i></a>
+            <a href="#" class="sidebar-button2"><i
+                    class="fa-solid fa-arrow-right-from-bracket sidebar-logo logout-logo"></i></a>
+
+
+        </div>
+        <div class="content">
+            <div class="navbar">
+                <i class="fa-solid fa-bars"></i>
+                <select class="textbox" name="dates" id="dates">
+                    <option value="last7days">Last 7 days</option>
+                    <option value="last15days">Last 15 days</option>
+                    <option value="last15days">Last month</option>
+                </select>
+            </div>
+            <div class="social-media">
+                <div class="social-meadia-followers">
+                    <i class="fa-brands fa-twitter" id="twitter-logo"></i>
+                    <span class="xl-text">280k</span>
+                    <span class="gray-text">Followers</span>
+                    <i class="fa-solid fa-ellipsis ellipsis"></i>
+                </div>
+                <div style="background-color: white;" class="social-meadia-followers">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="xl-text">680k</span>
+                    <span class="gray-text">Followers</span>
+                    <i class="fa-solid fa-ellipsis ellipsis"></i>
+                </div>
+                <div class="social-meadia-followers">
+                    <i class="fa-brands fa-youtube" id="youtube-logo"></i>
+                    <span class="xl-text">2.3M</span>
+                    <span class="gray-text">Followers</span>
+                    <i class="fa-solid fa-ellipsis ellipsis"></i>
+                </div>
+                <div class="social-meadia-followers">
+                    <i class="fa-brands fa-facebook-f" id="facebook-logo"></i>
+                    <span class="xl-text">50k</span>
+                    <span class="gray-text">Followers</span>
+                    <i class="fa-solid fa-ellipsis ellipsis"></i>
+                </div>
+            </div>
+            <div class="graph">
+
+                <div>
+                    <b>Instagram Subscribes</b>
+                    <div>
+                        <i class="fa-solid fa-circle" style="color: green;"></i><span>Gained</span>
+                        <i class="fa-solid fa-circle" style="color: red;"></i><span>Lost</span>
+                    </div>
+
+                </div>
+                <canvas id="chart"></canvas>
+            </div>
+            <div class="metrics">
+                <div class="key-metrics">
+                    <ul>
+                        <li class="metric-key-values key-metric-title">
+                            <span>Key Metrics</span>
+                            <span></span>
+                        </li>
+                        <li class="metric-key-values">
+                            <span>Clicks</span>
+                            <span>10k</span>
+                        </li>
+                        <hr>
+                        <li class="metric-key-values">
+                            <span>Likes</span>
+                            <span>680</span>
+                        </li>
+                        <hr>
+                        <li class="metric-key-values">
+                            <span>Followers</span>
+                            <span>8k</span>
+                        </li>
+                        <hr>
+                        <li class="metric-key-values">
+                            <span>Impressions</span>
+                            <span>5500</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="istatistics">
+                    <span class="white-text">Engaged users</span>
+                    <span class="xl-text-white">12.2k</span>
+                    <i class="fa-solid fa-angles-up" id="angles-up"><span class="istatistic-text-color">19%</span></i>
+                </div>
+                <div class="istatistics">
+                    <span class="white-text">Page Impressions</span>
+                    <span class="xl-text-white">8.6k</span>
+                    <i class="fa-solid fa-angles-down" id="angles-down"><span class="istatistic-text-color">9%</span></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="notification">
+            <div class="header">
+                <a href="#"><i class="fa-regular fa-bell bell-icon"></i></a>
+                <i class="fa-solid fa-gift gift-icon"> 2 new updates</i>
+                <a href="#"><i class="fa-regular fa-user user-icon"></i></a>
+
+
+            </div>
+
+            <img src="img/software-solutions.png" class="img-software-solutions" alt="solutions">
+
+            <div class="calendar">
+                <div class="airdatepicker" id="airdatepicker" type="text"></div>
+            </div>
+
+            <div class="persons">
+                <i class="fa-solid fa-crown"></i>
+                <span>Sayt hi to <b>Laith Hart</b></span>
+                <img src="img/man.PNG" alt="">
+            </div>
+            <div class="persons">
+                <i class="fa-solid fa-crown"></i>
+                <span>Sayt hi to <b>Sidney Dyer</b></span>
+                <img src="img/woman.PNG" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="node_modules/air-datepicker/air-datepicker.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="js/chartjs.js"></script>
+    <script src="js/airdatepicker.js"></script>
+
+   
+
+</body>
+
+</html>
